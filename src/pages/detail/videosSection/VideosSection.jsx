@@ -22,7 +22,7 @@ const VideosSection = ({ data, loading }) => {
 
     return (
         <>
-        {data?.results?.length>0 && <div className="videosSection">
+        {<div className="videosSection">
             <ContentWrapper>
                 <div className="sectionHeading">Official Videos</div>
                 {!loading ? (

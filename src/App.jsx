@@ -9,7 +9,7 @@ import Home from "./pages/home/Home";
 import Explore from "./pages/explore/Explore";
 import Detail from "./pages/detail/Detail";
 import SearchResult from "./pages/searchResult/SearchResult";
-import PageNotFound from "./pages/404/pageNotFound";
+import PageNotFound from "./pages/404/PageNotFound";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 

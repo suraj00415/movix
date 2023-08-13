@@ -12,7 +12,7 @@ import SearchResult from "./pages/searchResult/SearchResult";
 import PageNotFound from "./pages/404/PageNotFound";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-
+import { Analytics} from "@vercel/analytics/react";
 
 function App() {
   const dispatch = useDispatch();
@@ -70,7 +70,9 @@ function App() {
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer />
+      <Analytics/>
     </BrowserRouter>
+    
   );
 }
 

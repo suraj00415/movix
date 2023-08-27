@@ -24,7 +24,7 @@
             .profileImg {
                 width: 125px;
                 height: 125px;
-                border-radius: 10%;
+                border-radius: 0%;
                 overflow: hidden;
                 margin-bottom: 0px;
                 @include md {
@@ -37,6 +37,7 @@
                     height: 100%;
                     object-fit: cover;
                     object-position: center top;
+                    border-radius: 10%;
                     display: block;
                 }
             }

@@ -1,15 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
 import "./style.scss";
-
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
 import Img from "../../../components/lazyLoadImage/Img";
 import avatar from "../../../assets/avatar.png";
 
 const Cast = ({ data, loading }) => {
     const { url } = useSelector((state) => state.home);
-
     const skeleton = () => {
         return (
             <div className="skItem">
@@ -30,7 +27,7 @@ const Cast = ({ data, loading }) => {
                                 let imgUrl=item.profile_path?url.profile+item.profile_path :avatar
                                 return(
                                     <div className="listItem" key={item.id}>
-                                        <div className="profileImg">
+                                        <div className="profileImgCast">
                                             <Img src={imgUrl}/>
                                         </div>
                                         <div className="name">{item.name}</div>
